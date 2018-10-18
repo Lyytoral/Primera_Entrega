@@ -1,12 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
 :root {
   --jumbotron-padding-y: 3rem;
 }
 
 .jumbotron {
-  padding-top: var(--jumbotron-padding-y);
-  padding-bottom: var(--jumbotron-padding-y);
-  margin-bottom: 0;
-  background-color: #fff;
+    padding-top: var(--jumbotron-padding-y);
+    padding-bottom: var(--jumbotron-padding-y);
+    margin-bottom: 0;
+    background-image: url(img/pichilemu_01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center
+    
 }
 @media (min-width: 768px) {
   .jumbotron {
@@ -20,7 +25,10 @@
 }
 
 .jumbotron-heading {
-  font-weight: 300;
+ font-style: normal; 
+    font-weight: 20;
+    color:white; 
+font-family: 'Roboto Slab', serif;
 }
 
 .jumbotron .container {
@@ -37,7 +45,15 @@ footer p {
 }
 
 .bg-color {
-    background-color: darkred
+    background-color: rosybrown
 }
 
-.bg-color2 {background-color: black}
+.bg-color2 {background-color:#9FC6C7}
+
+.card img{filter: grayscale(1);
+    transition: all ease 1s;
+}
+.card:hover img{filter: grayscale(0);
+    }
+
+
